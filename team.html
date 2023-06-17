@@ -1,77 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destiny</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <header> <!-- header start -->
-        <h1>
-            <a href="/">Destiny</a><!--  "  '/'  bu işaretin anlamı kullanıcıyı ana sayfaya yönlendirmek" -->
-        </h1>  
-        <nav>
-            <a href="#">Hoş geldin</a>
-            <a href="#">Tanıtım</a>
-            <a href="#">Adımlar</a>
-            <a href="#" class="spec-link">Projeler</a>
-            <a href="#" class="spec-link">Takım</a>
-        </nav>
-        <button class="nav-btn">|||</button>
-    </header> <!-- header end -->
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- header start -->
+      <h1>
+        <a href="/">Destiny</a
+        ><!--  "  '/'  bu işaretin anlamı kullanıcıyı ana sayfaya yönlendirmek" -->
+      </h1>
+      <nav>
+        <a href="#">Hoş geldin</a>
+        <a href="#">Tanıtım</a>
+        <a href="#">Adımlar</a>
+        <a href="#" class="spec-link">Projeler</a>
+        <a href="#" class="spec-link">Takım</a>
+      </nav>
+      <button class="nav-btn">|||</button>
+    </header>
+    <!-- header end -->
 
-
-
-
-
-
-
-
-
-
+    <!-- ana içerik -->
+    <main>
+        <!-- Sayaç Kısmı -->
+        <section id="count-sec">
+          <div class="count-sec-left">
+            <h1>Bu Ayın En İyisi</h1>
+            <div class="counter">
+              <h4>Açıklanmasına kalan süre</h4>
+              <div class="boxes">
+                <div class="box">
+                  <p>00</p>
+                  <p>Saniye</p>
+                </div>
+                <div class="box">
+                  <p>00</p>
+                  <p>Dakika</p>
+                </div>
+                <div class="box">
+                  <p>00</p>
+                  <p>Saat</p>
+                </div>
+                <div class="box">
+                  <p>00</p>
+                  <p>Gün</p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button>Tahmin Et</button>
+              <button>Sonuçları Göster</button>
+            </div>
+          </div>
+  
+          <div class="count-sec-right">
+            <img src="https://picsum.photos/300" />
+          </div>
+        </section>
+        <!-- Fotoğraf Alanı -->
+        <section id="images-sec">
+          <div class="img-wrapper">
+            <img src="https://picsum.photos/500" />
+            <h1>Sürdürülebilir</h1>
+          </div>
+          <div class="img-wrapper">
+            <img src="https://picsum.photos/501" />
+            <h1>Kolay Bakım</h1>
+          </div>
+          <div class="img-wrapper">
+            <img src="https://picsum.photos/502" />
+            <h1>Göz Alıcı</h1>
+          </div>
+        </section>
+  
+        <!-- Bağı Alanı -->
+        <section id="donate-sec">
+          <div class="donate-sec-info">
+            <h1>En Çok Bağış</h1>
+            <button>Hepsini Göster</button>
+          </div>
+  
+          <div class="donate-sec-content">
+            <div class="donate-sec-people">
+              <img src="https://picsum.photos/101" />
+              <div>
+                <b>Furkan Evin</b>
+                <p>$40.000.00</p>
+              </div>
+            </div>
+            <div class="donate-sec-people">
+              <img src="https://picsum.photos/102" />
+              <div>
+                <b>Elif Yalçın</b>
+                <p>$7.250.000</p>
+              </div>
+            </div>
+            <div class="donate-sec-people">
+              <img src="https://picsum.photos/103" />
+              <div>
+                <b>Aylin Öztürk</b>
+                <p>$25.000.000</p>
+              </div>
+            </div>
+            <div class="donate-sec-people">
+              <img src="https://picsum.photos/104" />
+              <div>
+                <b>Murat Yılmaz</b>
+                <p>$15.800.000</p>
+              </div>
+            </div>
+            <div class="donate-sec-people">
+              <img src="https://picsum.photos/105" />
+              <div>
+                <b>Esra Güneş</b>
+                <p>$3.600.000</p>
+              </div>
+            </div>
+            <div class="donate-sec-people">
+              <img src="https://picsum.photos/106" />
+              <div>
+                <b>Duygu Şimşek</b>
+                <p>$80.250.000</p>
+              </div>
+            </div>
+            <div class="donate-sec-people">
+              <img src="https://picsum.photos/107" />
+              <div>
+                <b>Kenan Yasin</b>
+                <p>$102.750.000</p>
+              </div>
+            </div>
+            <div class="donate-sec-people">
+              <img src="https://picsum.photos/107" />
+              <div>
+                <b>Kenan Yasin</b>
+                <p>$102.750.000</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
     <!-- footer start -->
     <footer>
-        <div class="links">
-            <div class="links-area">
-                <h2>Şirket</h2>
-                <a href="">Projeler</a>
-                <a href="">Takım</a>
-                <a href="">Adımlar</a>
-                <a href="">Neden Biz?</a>
-               
-            </div>
-            <div class="links-area">
-                <h2>Kaynaklar</h2>
-                <a href="">Sözleşmeler</a>
-                <a href="">Gizlilik</a>
-                <a href="">Blog</a>
-                <a href="">Destek</a>
-            </div>
-            <div class="links-area">
-                <h2>Ürün</h2>
-                <a href="">Proje Yönetimi</a>
-                <a href="">Ürün Yönetimi</a>
-                <a href="">Zamanlama</a>
-                <a href="">Destek</a>
-            </div>
-            <div class="links-area">
-                <h1>Destiny</h1>
-                <p>Haberlermize Abone Ol!</p>
-                <form>
-                    <input type="text" placeholder="Emalinizi giriniz">
-                    <button>Abone ol</button>
-                </form>
-            </div>
+      <div class="links">
+        <div class="links-area">
+          <h2>Şirket</h2>
+          <a href="">Projeler</a>
+          <a href="">Takım</a>
+          <a href="">Adımlar</a>
+          <a href="">Neden Biz?</a>
         </div>
-        <p class="bottom">Copyright &copy; 2023</p>
-
+        <div class="links-area">
+          <h2>Kaynaklar</h2>
+          <a href="">Sözleşmeler</a>
+          <a href="">Gizlilik</a>
+          <a href="">Blog</a>
+          <a href="">Destek</a>
+        </div>
+        <div class="links-area">
+          <h2>Ürün</h2>
+          <a href="">Proje Yönetimi</a>
+          <a href="">Ürün Yönetimi</a>
+          <a href="">Zamanlama</a>
+          <a href="">Destek</a>
+        </div>
+        <div class="links-area">
+          <h1>Destiny</h1>
+          <p>Haberlermize Abone Ol!</p>
+          <form>
+            <input type="text" placeholder="Emalinizi giriniz" />
+            <button>Abone ol</button>
+          </form>
+        </div>
+      </div>
+      <p class="bottom">Copyright &copy; 2023</p>
     </footer>
     <!-- footer end -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
