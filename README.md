@@ -10,4 +10,6 @@ HTML5 CSS3
 ## PREVİEW
 [Live Preview](https://landingg-page.netlify.app)
 
-![screen](screen.gif)
+### `screen`
+
+![](screen.gif)
