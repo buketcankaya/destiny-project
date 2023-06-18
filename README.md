@@ -1,13 +1,13 @@
-#Landing Page
+# Landing Page
 
 Project that based on styling.
 
-##used Technologies
+## used Technologies
 ```
 HTML5 CSS3
 ```
 
-##PREVİEW
+## PREVİEW
 [Live Preview](https://landingg-page.netlify.app)
 
 ![screen](screen.gif)
