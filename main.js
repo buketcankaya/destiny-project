@@ -9,13 +9,17 @@ btn.addEventListener('click',() => {
 });
 
 
-// videoları ekrana geldiği anda oynatma
+// videoları ekrana geldiği anda oynatma (sürekli videolar oynar)
 document.addEventListener('DOMContentLoaded', function () {
     const videos = document.querySelectorAll('video');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.play();
+          entry.target.addEventListener('ended', () => {
+            entry.target.currentTime = 0;
+            entry.target.play();
+          })
         } else {
           entry.target.pause();
         }
