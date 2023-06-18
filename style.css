@@ -507,154 +507,187 @@ background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
 
   /* !responsive yapılar */
   
-@media(max-width:800px){
-    header nav{     /*menü çizgisi gözükmez */
-          display: none;
-      }
-       header .nav-btn{ /*ekran küçüldüğünde menü çizgisi gözükür */
-          display:block;
-      }
-      .toggle{
-          display: flex;
-          flex-direction: column;
-          position: fixed;
-          right: 5px;
-          top: 70px;
-          background-color:rgb(101, 98, 98);
-          padding: 20px;
-          border-radius: 20px;
-      }
+
+
+/* 1500px altında geçerli olucak stiller */
+@media (max-width: 1500px) {
+    #images-sec {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      margin-top: 40px;
+    }
+    #images-sec img {
+      width: 400px;
+    }
+  }
   
-      #hero{
-          align-items: center;
-          justify-content: center;
-         
-      }
-      #hero-inner{
-          margin:40px;
-      }
-      /* liste alanı */
-      #list-sec .info{
-        flex-direction: column;
-      }
-      #list-sec.info h2,
-      .info p{
-        /* bu sitile hiç değer ataması yapılmamış gibi davranır */
-        max-width: unset;
+  /* 800px aşşağısında cihazlar için geçerli */
+  @media (max-width: 800px) {
+    header nav {
+      display: none;
     }
-    #what-sec.what-card{
-        flex-direction: column;
-        gap: 0px !important;
-        margin-bottom: 40px;
+    header .nav-btn {
+      display: block;
     }
-    #what-sec.cards{
-        gap:40px;
+    .toggle {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      right: 5px;
+      top: 70px;
+      background: #6a6a6a;
+      padding: 20px;
+      border-radius: 20px;
     }
-}
-
-@media(max-width:1200px){
-    #window-sec{
-        flex-direction: column;
-        align-items: center;
+    /* hero alanı */
+    #hero {
+      align-items: center;
+      justify-content: center;
     }
-    .window{
-        height: 300px;
+    #hero-inner {
+      margin: 40px;
     }
-    /* what-sec */
-    #what-sec{
-        flex-direction: column;
-        gap:50px;
-
+    /* liste alanı */
+    #list-sec {
+      padding: 30px;
     }
-    #what-sec.info{
-        max-width: unset;
-        display: flex;
-        gap:40px;
+    #list-sec .info {
+      flex-direction: column;
     }
-    #what-sec.info h1{
-        /* yazıın alt satıra inmesini engeller */
-       white-space: nowrap;
+    #list-sec .info h2,
+    .info p {
+      /* bu stile hiç değer ataması yapılmamış gibi davranır  */
+      max-width: unset;
     }
-    #what-sec.info p{
-        max-width: unset;
-    }
-    /* projeler alanı */
-    #projects-sec .project{
-        /* resimle yazılar yer değiştirir */
-    flex-direction: column-reverse;
-    }
-    #projects-sec .project-images{
-        justify-content: center;
-        padding: 20px 100px 0;
-    }
- 
   
-}
-
-@media(max-width:1000px){
-    footer .links{
-        grid-template-columns: repeat(2,1fr);
-        row-gap:50px;
-        padding:40px;
-        column-gap: 100px;;
+    #what-sec .info {
+      flex-direction: column;
+      gap: 0px !important;
+      margin-bottom: 40px;
     }
-
+    #what-sec .cards {
+      gap: 40px;
+    }
+    /* takım sayfası */
+    #count-sec {
+      flex-direction: column-reverse;
+    }
+    #count-sec .buttons {
+      font-size: 15px;
+      justify-content: space-between;
+    }
+    /* bağış alanı */
+    .donate-sec-content {
+      grid-template-columns: repeat(2, 200px) !important;
+    }
+  }
+  
+  /* ekran boyutu 1200px altındayken */
+  @media (max-width: 1200px) {
+    /* pencereler alanı */
+    #window-sec {
+      flex-direction: column;
+      align-items: center;
+    }
+    .window {
+      height: 300px;
+    }
+    /* What-Section */
+    #what-sec {
+      flex-direction: column;
+      gap: 50px;
+    }
+    #what-sec .info {
+      display: flex;
+      max-width: unset;
+      gap: 40px;
+    }
+    #what-sec .info h1 {
+      white-space: nowrap;
+    }
+    #what-sec .info p {
+      max-width: unset;
+    }
+    /* Projeler Alanı */
+    #projects-sec .project {
+      flex-direction: column-reverse;
+    }
+    #projects-sec .project-image {
+      justify-content: center;
+      padding: 20px 100px 0;
+    }
+  
+    #images-sec img {
+      width: 300px;
+    }
+  }
+  
+  /* ekran boyutu 1000px altındayken */
+  @media (max-width: 1000px) {
+    footer .links {
+      grid-template-columns: 1fr 1fr;
+      /* satırlar arası boşluk */
+      padding: 40px;
+      row-gap: 50px;
+      column-gap: 100px;
+    }
     footer form {
-        flex-direction:column;  
+      flex-direction: column;
+      /* align-items: end; */
     }
-
-    footer form input{
-        max-width: 200px;  
-        
+    footer form input {
+      max-width: 200px;
     }
-
-    .cards{
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-    
-    .card{
-        max-width: 400px;
+    footer .links .link-area:nth-child(even) {
+      /* text-align: end; */
     }
   
-   /* footer .links .links-area:nth-child(even){ 
-        /* ekran küçüldüğünde sağ tarafı 
-        yana yaslamak için 
-        even çift sayıları 2 ve 4 cü sütun almış olduk 
-        odd olsa 1ve 3 alırdık
-        text-align: end;
-    }  */
-
+    /* Kartlar Alanı */
+    .cards {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+    .card {
+      max-width: 400px;
+    }
+  
     /* projeler sayfası */
-    .welcome{
-        padding: 100px 20px;
-        font-size: 40px;
+    .welcome {
+      padding: 100px 20px;
+      font-size: 40px;
     }
-} 
-@media(max-width:500px){
-    footer .links{
-        padding:5px;
-        column-gap: 50px;
+  
+    /* bağış alanı */
+    .donate-sec-content {
+      grid-template-columns: repeat(3, 200px);
     }
+  }
+  
+  /* ekran boyutu 500px altındayken */
+  @media (max-width: 500px) {
     footer {
-        padding:5px;
+      padding: 5px;
     }
-    .project-images{
-        
-        padding: 0 30px !important;
+    footer .links {
+      padding: 5px;
+      column-gap: 50px;
     }
-    .project-images img{
-       width: 100%;
+  
+    .project-image {
+      padding: 0 30px !important;
     }
-    .project-info{
-        margin-top: 70px;
+    .project-image img {
+      width: 100%;
     }
-
-}
-/* ekran boyutu 1000px den yüksek ise */
-@media(min-width:1000px){
-    section{
-        padding: 100px;
+    .project-info {
+      margin-top: 70px;
     }
-}
-/* kartlar alanı */
+  }
+  
+  /* erkan boyutu 1000px'den yüksek ise */
+  @media (min-width: 1000px) {
+    section {
+      padding: 100px;
+    }
+  }
